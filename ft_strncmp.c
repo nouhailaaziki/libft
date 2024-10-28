@@ -18,18 +18,16 @@ int	ft_strncmp(const char *s1, const char *s2, size_t n)
 	size_t	i;
 
 	i = 0;
-	if (i < n)
-	{
-		while (s1[i] && s2[i] && s1[i] == s2[i] && i < n)
-			i++;
-		return (s1[i] - s2[i]);
-	}
-	return (0);
+	while (s1[i] && s2[i] && s1[i] == s2[i] && i < n)
+		i++;
+	if (i == n)
+		return (0);
+	return (s1[i] - s2[i]);
 }
-
+/*
 int	main()
-{	char str1[] = "nouhaila";
+{	char str1[] = "azik5";
 	char str2[] = "aziki";
-	printf("%d\n", ft_strncmp(str1, str2, 5));
-	printf("%d", strncmp(str1, str2, 5));
-}
+	printf("%d\n", ft_strncmp(str1, str2, 4));
+	printf("%d", strncmp(str1, str2, 4));
+}*/
