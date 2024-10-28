@@ -23,14 +23,14 @@ size_t	ft_strlen(const char *s)
 	return (l);
 }
 
-size_t	ft_strlcpy(char *dst, const char *src, size_t size)
+size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize)
 {
 	size_t	i;
 
 	i = 0;
-	if (size > 0)
+	if (dstsize > 0)
 	{
-		while (src[i] && i < (size - 1))
+		while (src[i] && i < (dstsize - 1))
 		{
 			dst[i] = src[i];
 			i++;
@@ -44,6 +44,7 @@ int	main()
 {
 	char dest[10] = "aziki";
 	const char src[9] = "nouhaila";
-	printf("%zu\n", ft_strlcpy(dest, src, 10));
+	printf("%zu\n", ft_strlcpy(dest, src, 6));
+	printf("%s\n", src);
 	printf("%s", dest);
 }*/
