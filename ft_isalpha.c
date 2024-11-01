@@ -6,7 +6,7 @@
 /*   By: noaziki <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/22 10:52:22 by noaziki           #+#    #+#             */
-/*   Updated: 2024/10/24 13:22:00 by noaziki          ###   ########.fr       */
+/*   Updated: 2024/10/29 14:14:23 by noaziki          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,14 +15,14 @@
 
 int	ft_isalpha(int c)
 {
-	if ((c >= 65 && c <= 90) || (c >= 97 && c <= 122))
+	if ((c >= 'A' && c <= 'Z') || (c >= 'a' && c <= 'z'))
 		return (1);
-	else
-		return (0);
+	return (0);
 }
 /*
 int	main()
 {
-	char c = 'A';
-	printf("%d", ft_isalpha(c));
+	int c = 'a';
+	printf("%d\n", ft_isalpha(c));
+	printf("%d", isalpha(c));
 }*/

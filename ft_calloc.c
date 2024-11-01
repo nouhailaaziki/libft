@@ -1,48 +1,37 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_atoi.c                                          :+:      :+:    :+:   */
+/*   ft_calloc.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: noaziki <noaziki@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/23 16:50:32 by noaziki           #+#    #+#             */
-/*   Updated: 2024/10/31 15:47:36 by noaziki          ###   ########.fr       */
+/*   Created: 2024/10/31 11:11:06 by noaziki           #+#    #+#             */
+/*   Updated: 2024/11/01 10:57:47 by noaziki          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
 #include <stdlib.h>
 
-int	ft_atoi(const char *str)
+void	*ft_calloc(size_t count, size_t size)
 {
-	int	i;
-	int	s;
-	int	r;
+	unsigned char	*p;
+	size_t			i;
 
 	i = 0;
-	s = 1;
-	r = 0;
-	while (str[i] == 32 || (str[i] >= 9 && str[i] <= 13))
-		i++;
-	if (str[i] == '-')
+	p = malloc(count * size);
+	if (p == NULL)
+		return (NULL);
+	while (i < count * size)
 	{
-		s *= -1;
+		p[i] = 0;
 		i++;
 	}
-	else if (str[i] == '+')
-		i++;
-	while (str[i] >= '0' && str[i] <= '9')
-	{
-		r *= 10;
-		r += str[i] - 48;
-		i++;
-	}
-	return (r * s);
+	return ((void *)p);
 }
 /*
-int	main()
+int main()
 {
-	char	str[] = "-99";
-	printf("%d\n", ft_atoi(str));
-	printf("%d", atoi(str));
+    printf("%s\n", ft_calloc(5, 4));
+    printf("%s\n", calloc(5, 4));
 }*/

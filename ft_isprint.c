@@ -6,7 +6,7 @@
 /*   By: noaziki <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/22 19:25:58 by noaziki           #+#    #+#             */
-/*   Updated: 2024/10/24 11:35:58 by noaziki          ###   ########.fr       */
+/*   Updated: 2024/10/29 16:03:27 by noaziki          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,6 +23,7 @@ int	ft_isprint(int c)
 /*
 int	main()
 {
-	int	c = '\0';
-	printf("%d", ft_isprint(c));
+	int	c = 266;
+	printf("%d\n", ft_isprint(c));
+	printf("%d", isprint(c));
 }*/

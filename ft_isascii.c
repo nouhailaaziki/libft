@@ -6,7 +6,7 @@
 /*   By: noaziki <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/22 11:35:31 by noaziki           #+#    #+#             */
-/*   Updated: 2024/10/24 11:39:51 by noaziki          ###   ########.fr       */
+/*   Updated: 2024/10/29 15:15:39 by noaziki          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,5 +24,6 @@ int	ft_isascii(int c)
 int	main()
 {
 	int	c = 177;
-	printf("%d", ft_isascii(c));
+	printf("%d\n", ft_isascii(c));	
+	printf("%d", isascii(c));
 }*/

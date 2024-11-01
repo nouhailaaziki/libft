@@ -6,7 +6,7 @@
 /*   By: noaziki <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/22 11:08:52 by noaziki           #+#    #+#             */
-/*   Updated: 2024/10/24 13:04:19 by noaziki          ###   ########.fr       */
+/*   Updated: 2024/10/29 15:02:43 by noaziki          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,15 +15,15 @@
 
 int	ft_isalnum(int c)
 {
-	if ((c >= 49 && c <= 57) || (c >= 65 && c <= 90)
-		|| (c >= 97 && c <= 122))
+	if ((c >= '0' && c <= '9') || (c >= 'A' && c <= 'Z')
+		|| (c >= 'a' && c <= 'z'))
 		return (1);
-	else
-		return (0);
+	return (0);
 }
 /*
 int	main()
 {
-	int	c = '1';
-	printf("%d", ft_isalnum(c));
+	int	c = '2';
+	printf("%d\n", ft_isalnum(c));
+	printf("%d", isalnum(c));
 }*/

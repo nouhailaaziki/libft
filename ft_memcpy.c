@@ -6,7 +6,7 @@
 /*   By: noaziki <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/26 15:19:40 by noaziki           #+#    #+#             */
-/*   Updated: 2024/10/26 16:26:08 by noaziki          ###   ########.fr       */
+/*   Updated: 2024/10/29 09:44:53 by noaziki          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,9 +32,11 @@ void	*ft_memcpy(void *dst, const void *src, size_t n)
 /*
 int	main()
 {
-	unsigned char dest[20];
+	unsigned char dest[] = "aziki";
 	unsigned char str[] = "nouhaila aziki";
 	size_t n = 8;
 	printf("%s\n", ft_memcpy(dest, str, n));
+	printf("%s", str);	
+	printf("%s\n", memcpy(dest, str, n));
 	printf("%s", str);
 }*/
