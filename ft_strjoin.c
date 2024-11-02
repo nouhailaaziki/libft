@@ -6,56 +6,11 @@
 /*   By: noaziki <noaziki@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/02 10:45:59 by noaziki           #+#    #+#             */
-/*   Updated: 2024/11/02 14:12:52 by noaziki          ###   ########.fr       */
+/*   Updated: 2024/11/02 14:46:19 by noaziki          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
-size_t	ft_strlen(const char *s)
-{
-	size_t	l;
-
-	l = 0;
-	while (s[l])
-		l++;
-	return (l);
-}
-
-void	*ft_calloc(size_t count, size_t size)
-{
-	unsigned char	*p;
-	size_t			i;
-
-	i = 0;
-	p = malloc(count * size);
-	if (p == NULL)
-		return (NULL);
-	while (i < count * size)
-	{
-		p[i] = 0;
-		i++;
-	}
-	return ((void *)p);
-}
-
-char	*ft_strdup(const char *s)
-{
-	int		i;
-	int		len;
-	char	*p;
-
-	i = 0;
-	len = (ft_strlen(s) + 1);
-	p = malloc(len * sizeof(char));
-	while (s[i])
-	{
-		p[i] = s[i];
-		i++;
-	}
-	p[i] = '\0';
-	return (p);
-}
 
 void	*nulltest(char const *s1, char const *s2)
 {

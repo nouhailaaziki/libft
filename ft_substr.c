@@ -6,38 +6,11 @@
 /*   By: noaziki <noaziki@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/01 16:48:16 by noaziki           #+#    #+#             */
-/*   Updated: 2024/11/02 11:27:45 by noaziki          ###   ########.fr       */
+/*   Updated: 2024/11/02 14:44:29 by noaziki          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
-size_t	ft_strlen(char const *s)
-{
-	size_t	l;
-
-	l = 0;
-	while (s[l])
-		l++;
-	return (l);
-}
-
-void	*ft_calloc(size_t count, size_t size)
-{
-	unsigned char	*p;
-	size_t			i;
-
-	i = 0;
-	p = malloc(count * size);
-	if (p == NULL)
-		return (NULL);
-	while (i < count * size)
-	{
-		p[i] = 0;
-		i++;
-	}
-	return ((void *)p);
-}
 
 char	*ft_substr(char const *s, unsigned int start, size_t len)
 {

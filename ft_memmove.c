@@ -6,7 +6,7 @@
 /*   By: noaziki <noaziki@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/27 10:34:31 by noaziki           #+#    #+#             */
-/*   Updated: 2024/11/02 10:50:47 by noaziki          ###   ########.fr       */
+/*   Updated: 2024/11/02 15:00:56 by noaziki          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,10 +18,10 @@ void	*ft_memmove(void *dst, const void *src, size_t len)
 	unsigned char		*dest;
 	const unsigned char	*str;
 
+	if ((dst == NULL && src == NULL) || len == 0)
+		return (dst);
 	dest = (unsigned char *) dst;
 	str = (unsigned char *)src;
-	if (dest == NULL || str == NULL)
-		return (NULL);
 	if (dest < str)
 	{
 		i = 0;
