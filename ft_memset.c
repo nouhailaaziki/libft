@@ -6,12 +6,11 @@
 /*   By: noaziki <noaziki@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/26 09:39:06 by noaziki           #+#    #+#             */
-/*   Updated: 2024/11/01 10:34:13 by noaziki          ###   ########.fr       */
+/*   Updated: 2024/11/02 10:50:39 by noaziki          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-#include <string.h>
+#include "libft.h"
 
 void	*ft_memset(void *b, int c, size_t len)
 {

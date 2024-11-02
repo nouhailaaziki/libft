@@ -6,12 +6,11 @@
 /*   By: noaziki <noaziki@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/31 11:11:06 by noaziki           #+#    #+#             */
-/*   Updated: 2024/11/01 10:57:47 by noaziki          ###   ########.fr       */
+/*   Updated: 2024/11/02 10:51:57 by noaziki          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-#include <stdlib.h>
+#include "libft.h"
 
 void	*ft_calloc(size_t count, size_t size)
 {
