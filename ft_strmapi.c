@@ -1,38 +1,35 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strrchr.c                                       :+:      :+:    :+:   */
+/*   ft_strmapi.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: noaziki <noaziki@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/24 16:33:43 by noaziki           #+#    #+#             */
-/*   Updated: 2024/11/04 17:21:25 by noaziki          ###   ########.fr       */
+/*   Created: 2024/11/04 17:26:12 by noaziki           #+#    #+#             */
+/*   Updated: 2024/11/04 17:54:07 by noaziki          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strrchr(const char *s, int c)
+char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {
-	int	i;
+	size_t	i;
+	size_t	len;
+	char	*str;
 
 	i = 0;
-	while (s[i])
-		i++;
-	if ((unsigned char)c == '\0')
-		return ((char *)(s + i));
-	while (i >= 0)
+	len = ft_strlen(s);
+	if (s == NULL || f == NULL)
+		return (NULL);
+	str = malloc(len + 1);
+	if (str == NULL)
+		return (NULL);
+	while (i < len)
 	{
-		if ((unsigned char)s[i] == (unsigned char)c)
-			return ((char *)(s + i));
-		i--;
+		str[i] = (*f)(i, s[i]);
+		i++;
 	}
-	return (NULL);
+	str[i] = '\0';
+	return (str);
 }
-/*
-int	main()
-{
-	printf("%s\n", ft_strrchr("nouhaila\0noaziki", '\0'));
-	printf("%s", strrchr("nouhaila\0noaziki", '\0'));
-}
-*/

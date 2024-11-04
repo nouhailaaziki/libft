@@ -6,7 +6,7 @@
 /*   By: noaziki <noaziki@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/02 15:11:04 by noaziki           #+#    #+#             */
-/*   Updated: 2024/11/03 10:32:38 by noaziki          ###   ########.fr       */
+/*   Updated: 2024/11/04 15:37:42 by noaziki          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,10 +30,10 @@ char	*ft_strtrim(char const *s1, char const *set)
 /*
 int	main(void)
 {
-	printf("%s\n", ft_strtrim("nouhaila", "naziki"));
-	printf("%s\n", ft_strtrim("nouhaila", "aziki"));
-	printf("%s\n", ft_strtrim("nouhaila", "nouzi"));
-	printf("%s\n", ft_strtrim("nouhaila", ""));
-	printf("%s\n", ft_strtrim("", "noaziki"));
-	printf("%s\n", ft_strtrim("", ""));
+	printf("%s\n", ft_strtrim("123321nouhaila123", "123"));
+	// printf("%s\n", ft_strtrim("nouhaila", "aziki"));
+	// printf("%s\n", ft_strtrim("nouhaila", "nouzi"));
+	// printf("%s\n", ft_strtrim("nouhaila", ""));
+	// printf("%s\n", ft_strtrim("", "noaziki"));
+	// printf("%s\n", ft_strtrim("", ""));
 }*/

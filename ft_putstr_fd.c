@@ -1,38 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strrchr.c                                       :+:      :+:    :+:   */
+/*   ft_putstr_fd.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: noaziki <noaziki@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/24 16:33:43 by noaziki           #+#    #+#             */
-/*   Updated: 2024/11/04 17:21:25 by noaziki          ###   ########.fr       */
+/*   Created: 2024/11/04 19:23:06 by noaziki           #+#    #+#             */
+/*   Updated: 2024/11/04 19:45:34 by noaziki          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strrchr(const char *s, int c)
+void	ft_putstr_fd(char *s, int fd)
 {
-	int	i;
+	size_t	i;
 
 	i = 0;
+	if (s == NULL)
+		return ;
 	while (s[i])
-		i++;
-	if ((unsigned char)c == '\0')
-		return ((char *)(s + i));
-	while (i >= 0)
 	{
-		if ((unsigned char)s[i] == (unsigned char)c)
-			return ((char *)(s + i));
-		i--;
+		ft_putchar_fd(s[i], fd);
+		i++;
 	}
-	return (NULL);
 }
-/*
-int	main()
-{
-	printf("%s\n", ft_strrchr("nouhaila\0noaziki", '\0'));
-	printf("%s", strrchr("nouhaila\0noaziki", '\0'));
-}
-*/

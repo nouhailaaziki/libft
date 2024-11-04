@@ -1,38 +1,19 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strrchr.c                                       :+:      :+:    :+:   */
+/*   ft_putchar_fd.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: noaziki <noaziki@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/24 16:33:43 by noaziki           #+#    #+#             */
-/*   Updated: 2024/11/04 17:21:25 by noaziki          ###   ########.fr       */
+/*   Created: 2024/11/04 16:54:00 by noaziki           #+#    #+#             */
+/*   Updated: 2024/11/04 17:21:45 by noaziki          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strrchr(const char *s, int c)
+void	ft_putchar_fd(char c, int fd)
 {
-	int	i;
-
-	i = 0;
-	while (s[i])
-		i++;
-	if ((unsigned char)c == '\0')
-		return ((char *)(s + i));
-	while (i >= 0)
-	{
-		if ((unsigned char)s[i] == (unsigned char)c)
-			return ((char *)(s + i));
-		i--;
-	}
-	return (NULL);
+	if (fd >= 0)
+		write(fd, &c, 1);
 }
-/*
-int	main()
-{
-	printf("%s\n", ft_strrchr("nouhaila\0noaziki", '\0'));
-	printf("%s", strrchr("nouhaila\0noaziki", '\0'));
-}
-*/

@@ -1,38 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strrchr.c                                       :+:      :+:    :+:   */
+/*   ft_striteri.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: noaziki <noaziki@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/24 16:33:43 by noaziki           #+#    #+#             */
-/*   Updated: 2024/11/04 17:21:25 by noaziki          ###   ########.fr       */
+/*   Created: 2024/11/04 17:51:33 by noaziki           #+#    #+#             */
+/*   Updated: 2024/11/04 18:08:06 by noaziki          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strrchr(const char *s, int c)
+void	ft_striteri(char *s, void (*f)(unsigned int, char*))
 {
-	int	i;
+	unsigned int	i;
 
 	i = 0;
 	while (s[i])
-		i++;
-	if ((unsigned char)c == '\0')
-		return ((char *)(s + i));
-	while (i >= 0)
 	{
-		if ((unsigned char)s[i] == (unsigned char)c)
-			return ((char *)(s + i));
-		i--;
+		(*f)(i, &s[i]);
+		i++;
 	}
-	return (NULL);
 }
-/*
-int	main()
-{
-	printf("%s\n", ft_strrchr("nouhaila\0noaziki", '\0'));
-	printf("%s", strrchr("nouhaila\0noaziki", '\0'));
-}
-*/
