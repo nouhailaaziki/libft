@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strdup.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: noaziki <noaziki@student.42.fr>            +#+  +:+       +#+        */
+/*   By: noaziki <contact.naziki@gmail.com>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/28 17:36:59 by noaziki           #+#    #+#             */
-/*   Updated: 2024/11/02 14:48:50 by noaziki          ###   ########.fr       */
+/*   Updated: 2024/11/10 10:15:29 by noaziki          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,9 +31,3 @@ char	*ft_strdup(const char *s)
 	p[i] = '\0';
 	return (p);
 }
-/*
-int	main()
-{
-	char str[] = "nouhaila";
-	printf("%s", ft_strdup(str));
-}*/

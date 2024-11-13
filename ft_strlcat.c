@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlcat.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: noaziki <noaziki@student.42.fr>            +#+  +:+       +#+        */
+/*   By: noaziki <contact.naziki@gmail.com>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/23 13:42:27 by noaziki           #+#    #+#             */
-/*   Updated: 2024/11/02 10:56:47 by noaziki          ###   ########.fr       */
+/*   Updated: 2024/11/10 10:15:44 by noaziki          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,11 +34,3 @@ size_t	ft_strlcat(char *dest, const char *src, size_t size)
 	}
 	return (ld + ls);
 }
-/*
-int main()
-{
-	char dest[6] = "aziki";
-	const char src[6] = "nouha";
-	printf("%zu\n", ft_strlcat(dest, src, 6));
-	printf("%s\n", dest);
-}*/

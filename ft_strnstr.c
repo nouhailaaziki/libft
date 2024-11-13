@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strnstr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: noaziki <noaziki@student.42.fr>            +#+  +:+       +#+        */
+/*   By: noaziki <contact.naziki@gmail.com>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/24 19:14:40 by noaziki           #+#    #+#             */
-/*   Updated: 2024/11/02 10:49:31 by noaziki          ###   ########.fr       */
+/*   Updated: 2024/11/10 10:16:47 by noaziki          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,9 +39,3 @@ char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 	}
 	return (NULL);
 }
-/*
-int	main()
-{
-	printf("%s\n", ft_strnstr("nouhailaazikinaziki", "l", 7));
-	printf("%s\n", strnstr("nouhailaazikinaziki", "l", 7));
-}*/

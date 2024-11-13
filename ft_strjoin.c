@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strjoin.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: noaziki <noaziki@student.42.fr>            +#+  +:+       +#+        */
+/*   By: noaziki <contact.naziki@gmail.com>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/02 10:45:59 by noaziki           #+#    #+#             */
-/*   Updated: 2024/11/02 14:46:19 by noaziki          ###   ########.fr       */
+/*   Updated: 2024/11/10 10:13:19 by noaziki          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -50,8 +50,3 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	s3[i + j] = '\0';
 	return (s3);
 }
-/*
-int	main(void)
-{
-	printf("%s", ft_strjoin("", ""));
-}*/

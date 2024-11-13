@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isalpha.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: noaziki <noaziki@student.42.fr>            +#+  +:+       +#+        */
+/*   By: noaziki <contact.naziki@gmail.com>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/22 10:52:22 by noaziki           #+#    #+#             */
-/*   Updated: 2024/11/02 10:51:39 by noaziki          ###   ########.fr       */
+/*   Updated: 2024/11/10 10:14:05 by noaziki          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,10 +18,3 @@ int	ft_isalpha(int c)
 		return (1);
 	return (0);
 }
-/*
-int	main()
-{
-	int c = 'a';
-	printf("%d\n", ft_isalpha(c));
-	printf("%d", isalpha(c));
-}*/

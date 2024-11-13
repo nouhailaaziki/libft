@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isdigit.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: noaziki <noaziki@student.42.fr>            +#+  +:+       +#+        */
+/*   By: noaziki <contact.naziki@gmail.com>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/22 10:56:07 by noaziki           #+#    #+#             */
-/*   Updated: 2024/11/02 10:51:25 by noaziki          ###   ########.fr       */
+/*   Updated: 2024/11/10 10:14:15 by noaziki          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,10 +18,3 @@ int	ft_isdigit(int c)
 		return (1);
 	return (0);
 }
-/*
-int	main()
-{
-	int	c = '5';
-	printf("%d\n", ft_isdigit(c));
-	printf("%d", isdigit(c));
-}*/

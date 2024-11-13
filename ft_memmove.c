@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memmove.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: noaziki <noaziki@student.42.fr>            +#+  +:+       +#+        */
+/*   By: noaziki <contact.naziki@gmail.com>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/27 10:34:31 by noaziki           #+#    #+#             */
-/*   Updated: 2024/11/02 15:00:56 by noaziki          ###   ########.fr       */
+/*   Updated: 2024/11/10 10:14:55 by noaziki          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,14 +39,3 @@ void	*ft_memmove(void *dst, const void *src, size_t len)
 	}
 	return (dst);
 }
-/*
-int	main()
-{
-	unsigned char dst[] = "nouhaila aziki";
-	const unsigned char str[] = "nouhaila aziki";
-	size_t n = 5;
-	ft_memmove(dst, str, n);
-	printf("%s\n", dst);
-	memmove(dst, str, n);
-	printf("%s", dst);
-}*/

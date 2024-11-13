@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memcmp.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: noaziki <noaziki@student.42.fr>            +#+  +:+       +#+        */
+/*   By: noaziki <contact.naziki@gmail.com>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/27 09:29:44 by noaziki           #+#    #+#             */
-/*   Updated: 2024/11/02 10:51:04 by noaziki          ###   ########.fr       */
+/*   Updated: 2024/11/10 10:14:41 by noaziki          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,12 +31,3 @@ int	ft_memcmp(const void *s1, const void *s2, size_t n)
 	}
 	return (0);
 }
-/*
-int	main()
-{
-	unsigned char s1[] = "snouhailn";
-	unsigned char s2[] = "nouhaila";
-	size_t n = 0;
-	printf("%d\n", ft_memcmp(s1, s2, n));
-	printf("%d", memcmp(s1, s2, n));
-}*/

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_bzero.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: noaziki <noaziki@student.42.fr>            +#+  +:+       +#+        */
+/*   By: noaziki <contact.naziki@gmail.com>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/25 16:06:16 by noaziki           #+#    #+#             */
-/*   Updated: 2024/11/02 10:52:04 by noaziki          ###   ########.fr       */
+/*   Updated: 2024/11/13 11:06:36 by noaziki          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,22 +14,5 @@
 
 void	ft_bzero(void *s, size_t n)
 {
-	size_t			i;
-	unsigned char	*a;
-
-	i = 0;
-	a = (unsigned char *) s;
-	while (i < n)
-	{
-		a[i] = 0;
-		i++;
-	}
+	ft_memset(s, 0, n);
 }
-/*
-int main()
-{
-	char str[15] = "nouhaila aziki";
-	ft_bzero(str, 9);  
-	printf("%s\n", str);  
-	return 0;
-}*/

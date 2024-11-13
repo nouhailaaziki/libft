@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: noaziki <noaziki@student.42.fr>            +#+  +:+       +#+        */
+/*   By: noaziki <contact.naziki@gmail.com>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/24 14:57:43 by noaziki           #+#    #+#             */
-/*   Updated: 2024/11/03 10:12:15 by noaziki          ###   ########.fr       */
+/*   Updated: 2024/11/10 10:15:21 by noaziki          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,11 +27,3 @@ char	*ft_strchr(const char *s, int c)
 		return ((char *)(s + i));
 	return (NULL);
 }
-/*
-int	main()
-{
-	printf("%s\n", strchr("teste", 'e'));
-	printf("%s\n", ft_strchr("teste", 'e'));
-	printf("%s\n", strchr("teste", '\0'));
-	printf("%s\n", ft_strchr("teste", '\0'));
-}*/

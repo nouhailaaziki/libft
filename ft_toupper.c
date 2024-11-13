@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_toupper.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: noaziki <noaziki@student.42.fr>            +#+  +:+       +#+        */
+/*   By: noaziki <contact.naziki@gmail.com>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/24 13:29:05 by noaziki           #+#    #+#             */
-/*   Updated: 2024/11/02 10:48:21 by noaziki          ###   ########.fr       */
+/*   Updated: 2024/11/13 14:32:41 by noaziki          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,13 +14,7 @@
 
 int	ft_toupper(int c)
 {
-	if (c >= 97 && c <= 122)
+	if (c >= 'a' && c <= 'z')
 		c -= 32;
 	return (c);
 }
-/*
-int	main()
-{
-	int	c = 'N';
-	printf("%c", ft_toupper(c));
-}*/

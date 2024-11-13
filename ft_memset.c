@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memset.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: noaziki <noaziki@student.42.fr>            +#+  +:+       +#+        */
+/*   By: noaziki <contact.naziki@gmail.com>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/26 09:39:06 by noaziki           #+#    #+#             */
-/*   Updated: 2024/11/02 10:50:39 by noaziki          ###   ########.fr       */
+/*   Updated: 2024/11/13 09:22:58 by noaziki          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,12 +26,3 @@ void	*ft_memset(void *b, int c, size_t len)
 	}
 	return (b);
 }
-/*
-int	main()
-{
-	unsigned char	str[] = "nouhaila";
-	int	c = 445;
-	size_t len = 5;
-	ft_memset(str, c, len);
-	printf("%s\n", str);
-}*/

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: noaziki <noaziki@student.42.fr>            +#+  +:+       +#+        */
+/*   By: noaziki <contact.naziki@gmail.com>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/26 16:27:29 by noaziki           #+#    #+#             */
-/*   Updated: 2024/11/02 10:51:12 by noaziki          ###   ########.fr       */
+/*   Updated: 2024/11/10 10:14:34 by noaziki          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,11 +29,3 @@ void	*ft_memchr(const void *s, int c, size_t n)
 	}
 	return (NULL);
 }
-/*
-int	main()
-{
-	unsigned char str[] = "nouhaila";
-	unsigned char c = 'z';
-	size_t n = 5;
-	printf("%s", ft_memchr(str, c, n));
-}*/

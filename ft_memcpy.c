@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memcpy.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: noaziki <noaziki@student.42.fr>            +#+  +:+       +#+        */
+/*   By: noaziki <contact.naziki@gmail.com>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/26 15:19:40 by noaziki           #+#    #+#             */
-/*   Updated: 2024/11/02 14:58:14 by noaziki          ###   ########.fr       */
+/*   Updated: 2024/11/10 10:14:49 by noaziki          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,14 +30,3 @@ void	*ft_memcpy(void *dst, const void *src, size_t n)
 	}
 	return (dst);
 }
-/*
-int	main()
-{
-	unsigned char dest[] = "aziki";
-	unsigned char str[] = "nouhaila aziki";
-	size_t n = 8;
-	printf("%s\n", ft_memcpy(dest, str, n));
-	printf("%s", str);	
-	printf("%s\n", memcpy(dest, str, n));
-	printf("%s", str);
-}*/

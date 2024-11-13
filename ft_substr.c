@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_substr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: noaziki <noaziki@student.42.fr>            +#+  +:+       +#+        */
+/*   By: noaziki <contact.naziki@gmail.com>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/01 16:48:16 by noaziki           #+#    #+#             */
-/*   Updated: 2024/11/02 14:44:29 by noaziki          ###   ########.fr       */
+/*   Updated: 2024/11/10 10:16:29 by noaziki          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,11 +40,3 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	p[i] = '\0';
 	return (p);
 }
-/*
-int main()
-{
-	printf("%s\n", ft_substr("nouhailaaziki", 6,  5));
-	printf("%s\n", ft_substr("", 1,  1));
-	printf("%s\n", ft_substr("aziki", 6, 2));
-	printf("%s\n", ft_substr("noaziki", 4, 10));
-}*/

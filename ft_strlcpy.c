@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlcpy.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: noaziki <noaziki@student.42.fr>            +#+  +:+       +#+        */
+/*   By: noaziki <contact.naziki@gmail.com>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/23 09:37:39 by noaziki           #+#    #+#             */
-/*   Updated: 2024/11/02 10:55:55 by noaziki          ###   ########.fr       */
+/*   Updated: 2024/11/10 10:15:50 by noaziki          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,12 +28,3 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize)
 	}
 	return (ft_strlen(src));
 }
-/*
-int	main()
-{
-	char dest[10] = "aziki";
-	const char src[9] = "nouhaila";
-	printf("%zu\n", ft_strlcpy(dest, src, 6));
-	printf("%s\n", src);
-	printf("%s", dest);
-}*/

@@ -3,14 +3,15 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strtrim.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: noaziki <noaziki@student.42.fr>            +#+  +:+       +#+        */
+/*   By: noaziki <contact.naziki@gmail.com>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/02 15:11:04 by noaziki           #+#    #+#             */
-/*   Updated: 2024/11/04 15:37:42 by noaziki          ###   ########.fr       */
+/*   Updated: 2024/11/11 18:16:02 by noaziki          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+#include <stdio.h>
 
 char	*ft_strtrim(char const *s1, char const *set)
 {
@@ -27,13 +28,3 @@ char	*ft_strtrim(char const *s1, char const *set)
 		end--;
 	return (ft_substr(s1, start, end - start));
 }
-/*
-int	main(void)
-{
-	printf("%s\n", ft_strtrim("123321nouhaila123", "123"));
-	// printf("%s\n", ft_strtrim("nouhaila", "aziki"));
-	// printf("%s\n", ft_strtrim("nouhaila", "nouzi"));
-	// printf("%s\n", ft_strtrim("nouhaila", ""));
-	// printf("%s\n", ft_strtrim("", "noaziki"));
-	// printf("%s\n", ft_strtrim("", ""));
-}*/

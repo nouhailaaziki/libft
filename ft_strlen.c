@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlen.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: noaziki <noaziki@student.42.fr>            +#+  +:+       +#+        */
+/*   By: noaziki <contact.naziki@gmail.com>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/23 09:00:02 by noaziki           #+#    #+#             */
-/*   Updated: 2024/11/02 10:49:57 by noaziki          ###   ########.fr       */
+/*   Updated: 2024/11/10 10:15:55 by noaziki          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,9 +21,3 @@ size_t	ft_strlen(const char *s)
 		l++;
 	return (l);
 }
-/*
-int	main()
-{
-	const char s[] = "84120987)**&";
-	printf("%lu", strlen(s));
-}*/
