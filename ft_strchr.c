@@ -6,7 +6,7 @@
 /*   By: noaziki <contact.naziki@gmail.com>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/24 14:57:43 by noaziki           #+#    #+#             */
-/*   Updated: 2024/11/10 10:15:21 by noaziki          ###   ########.fr       */
+/*   Updated: 2024/11/17 10:56:22 by noaziki          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,11 +19,11 @@ char	*ft_strchr(const char *s, int c)
 	i = 0;
 	while (s[i])
 	{
-		if ((unsigned char)s[i] == (unsigned char)c)
+		if (s[i] == (char)c)
 			return ((char *)(s + i));
 		i++;
 	}
-	if ((unsigned char)s[i] == (unsigned char)c)
+	if (s[i] == (char)c)
 		return ((char *)(s + i));
-	return (NULL);
+	return (0);
 }

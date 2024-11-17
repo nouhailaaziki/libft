@@ -6,7 +6,7 @@
 /*   By: noaziki <contact.naziki@gmail.com>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/04 19:50:44 by noaziki           #+#    #+#             */
-/*   Updated: 2024/11/08 10:11:32 by noaziki          ###   ########.fr       */
+/*   Updated: 2024/11/17 11:15:33 by noaziki          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,8 @@
 
 void	ft_putnbr_fd(int n, int fd)
 {
+	if (fd < 0)
+		return ;
 	if (n == -2147483648)
 	{
 		ft_putchar_fd('-', fd);

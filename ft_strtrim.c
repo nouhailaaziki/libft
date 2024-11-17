@@ -6,7 +6,7 @@
 /*   By: noaziki <contact.naziki@gmail.com>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/02 15:11:04 by noaziki           #+#    #+#             */
-/*   Updated: 2024/11/11 18:16:02 by noaziki          ###   ########.fr       */
+/*   Updated: 2024/11/17 14:57:56 by noaziki          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,11 +17,13 @@ char	*ft_strtrim(char const *s1, char const *set)
 {
 	size_t	start;
 	size_t	end;
-
-	start = 0;
-	end = ft_strlen(s1);
-	if (s1 == NULL)
+	
+	if (!s1 || !set)
 		return (NULL);
+	start = 0;
+	if (!*s1)
+		end = 0;
+	end = ft_strlen(s1);
 	while (s1[start] && ft_strchr(set, s1[start]))
 		start++;
 	while (end > start && ft_strchr(set, s1[end - 1]))

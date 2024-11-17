@@ -6,7 +6,7 @@
 /*   By: noaziki <contact.naziki@gmail.com>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/23 09:00:02 by noaziki           #+#    #+#             */
-/*   Updated: 2024/11/10 10:15:55 by noaziki          ###   ########.fr       */
+/*   Updated: 2024/11/15 10:32:35 by noaziki          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,10 +14,10 @@
 
 size_t	ft_strlen(const char *s)
 {
-	size_t	l;
+	size_t	len;
 
-	l = 0;
-	while (s[l])
-		l++;
-	return (l);
+	len = 0;
+	while (s[len])
+		len++;
+	return (len);
 }

@@ -6,7 +6,7 @@
 /*   By: noaziki <contact.naziki@gmail.com>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/23 16:50:32 by noaziki           #+#    #+#             */
-/*   Updated: 2024/11/13 11:04:06 by noaziki          ###   ########.fr       */
+/*   Updated: 2024/11/16 17:26:41 by noaziki          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,9 @@
 
 int	ft_atoi(const char *str)
 {
-	int					i;
-	int					s;
-	unsigned long long	r;
+	int		i;
+	int		s;
+	size_t	r;
 
 	i = 0;
 	s = 1;

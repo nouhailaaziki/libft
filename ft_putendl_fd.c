@@ -6,7 +6,7 @@
 /*   By: noaziki <contact.naziki@gmail.com>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/04 20:22:00 by noaziki           #+#    #+#             */
-/*   Updated: 2024/11/08 10:11:30 by noaziki          ###   ########.fr       */
+/*   Updated: 2024/11/17 10:23:33 by noaziki          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void	ft_putendl_fd(char *s, int fd)
 {
-	if (s != NULL)
+	if (s && fd >= 0)
 	{
 		ft_putstr_fd(s, fd);
 		ft_putchar_fd('\n', fd);

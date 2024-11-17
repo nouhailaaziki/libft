@@ -1,4 +1,4 @@
-CC = cc
+COMPILER = cc
 
 CFLAGS = -Wall -Wextra -Werror
 
@@ -21,21 +21,21 @@ NAME = libft.a
 
 all: $(NAME)
 
-$(NAME) : $(OBJM) $(OBJB)
-	ar -rc $(NAME) $(OBJM) $(OBJB)
+$(NAME) : $(OBJM)
+	ar rc $(NAME) $(OBJM)
 
 bonus: $(OBJB)
-	ar -rc $(NAME) $(OBJB)
+	ar rc $(NAME) $(OBJB)
 
 %.o: %.c libft.h
-	$(CC) $(CFLAGS) -c $< -o $@
+	$(COMPILER) $(CFLAGS) -c $< -o $@
 
 clean:
-	rm -f $(OBJM) $(OBJB)
+	$(RM) $(OBJM) $(OBJB)
 
 fclean: clean
-	rm -f $(NAME)
+	$(RM) $(NAME)
 
 re: fclean all
 
-.PHONY: all bonus clean fclean re
+.PHONY: clean
