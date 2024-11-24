@@ -6,7 +6,7 @@
 /*   By: noaziki <contact.naziki@gmail.com>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/24 19:14:40 by noaziki           #+#    #+#             */
-/*   Updated: 2024/11/17 14:48:17 by noaziki          ###   ########.fr       */
+/*   Updated: 2024/11/21 18:09:40 by noaziki          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 	j = 0;
 	if (!haystack && len == 0 && needle)
 		return (NULL);
-	if (!*needle)
+	if (needle[i] == '\0')
 		return ((char *)haystack);
 	while (haystack[i] && i < len)
 	{

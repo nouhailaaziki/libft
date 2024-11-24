@@ -6,13 +6,13 @@
 /*   By: noaziki <contact.naziki@gmail.com>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/05 09:47:20 by noaziki           #+#    #+#             */
-/*   Updated: 2024/11/17 09:13:10 by noaziki          ###   ########.fr       */
+/*   Updated: 2024/11/20 10:12:06 by noaziki          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	counter(int n)
+static int	counter(int n)
 {
 	int	count;
 

@@ -6,7 +6,7 @@
 /*   By: noaziki <contact.naziki@gmail.com>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/10 11:00:53 by noaziki           #+#    #+#             */
-/*   Updated: 2024/11/10 16:04:33 by noaziki          ###   ########.fr       */
+/*   Updated: 2024/11/22 19:42:31 by noaziki          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ void	ft_lstadd_back(t_list **lst, t_list *new)
 {
 	t_list	*last;
 
-	if (!new)
+	if (!lst || !new)
 		return ;
 	if (!(*lst))
 	{

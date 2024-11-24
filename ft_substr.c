@@ -6,7 +6,7 @@
 /*   By: noaziki <contact.naziki@gmail.com>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/01 16:48:16 by noaziki           #+#    #+#             */
-/*   Updated: 2024/11/10 10:16:29 by noaziki          ###   ########.fr       */
+/*   Updated: 2024/11/21 14:04:09 by noaziki          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,14 +21,14 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 
 	a = start + len;
 	i = 0;
-	lens = ft_strlen(s);
 	if (s == NULL)
 		return (NULL);
+	lens = ft_strlen(s);
 	if (start >= lens)
-		return (ft_calloc(1, 1));
+		return (ft_strdup(""));
 	if (len > lens - start)
 		len = lens - start;
-	p = malloc(len + 1);
+	p = (char *)malloc(len + 1);
 	if (p == NULL)
 		return (NULL);
 	while (start < a && s[start])

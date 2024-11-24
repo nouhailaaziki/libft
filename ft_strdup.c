@@ -6,7 +6,7 @@
 /*   By: noaziki <contact.naziki@gmail.com>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/28 17:36:59 by noaziki           #+#    #+#             */
-/*   Updated: 2024/11/17 10:58:10 by noaziki          ###   ########.fr       */
+/*   Updated: 2024/11/19 09:35:10 by noaziki          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ char	*ft_strdup(const char *s)
 	char	*p;
 
 	i = 0;
-	p = malloc(ft_strlen(s) + 1);
+	p = (char *)malloc(ft_strlen(s) + 1);
 	if (!p)
 		return (NULL);
 	while (s[i])

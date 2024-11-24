@@ -6,13 +6,13 @@
 /*   By: noaziki <contact.naziki@gmail.com>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/04 11:02:59 by noaziki           #+#    #+#             */
-/*   Updated: 2024/11/13 15:07:35 by noaziki          ###   ########.fr       */
+/*   Updated: 2024/11/20 10:11:04 by noaziki          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t	ft_counter(char const *s, char c)
+static size_t	ft_counter(char const *s, char c)
 {
 	size_t	i;
 	size_t	count;
@@ -35,7 +35,7 @@ size_t	ft_counter(char const *s, char c)
 	return (count);
 }
 
-void	**ft_free(char **arr, size_t count)
+static void	**ft_free(char **arr, size_t count)
 {
 	size_t	i;
 
@@ -49,7 +49,7 @@ void	**ft_free(char **arr, size_t count)
 	return (NULL);
 }
 
-char	**ft_fill_arr(char const *s, char c, char **arr)
+static char	**ft_fill_arr(char const *s, char c, char **arr)
 {
 	size_t		i;
 	size_t		j;

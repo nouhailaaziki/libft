@@ -6,7 +6,7 @@
 /*   By: noaziki <contact.naziki@gmail.com>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/10 11:17:16 by noaziki           #+#    #+#             */
-/*   Updated: 2024/11/10 16:03:42 by noaziki          ###   ########.fr       */
+/*   Updated: 2024/11/22 20:49:09 by noaziki          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,6 +24,4 @@ void	ft_lstclear(t_list **lst, void (*del)(void *))
 		ft_lstdelone(*lst, del);
 		*lst = ptr;
 	}
-	free(*lst);
-	*lst = NULL;
 }

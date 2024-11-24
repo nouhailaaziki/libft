@@ -6,7 +6,7 @@
 /*   By: noaziki <contact.naziki@gmail.com>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/25 11:51:18 by noaziki           #+#    #+#             */
-/*   Updated: 2024/11/15 10:00:58 by noaziki          ###   ########.fr       */
+/*   Updated: 2024/11/21 18:23:51 by noaziki          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,11 +14,7 @@
 # define LIBFT_H
 
 # include <unistd.h>
-# include <stddef.h>
 # include <stdlib.h>
-# include <string.h>
-# include <fcntl.h>
-# include <stdio.h>
 
 typedef struct s_list
 {
